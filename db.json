@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "id": "ef6a",
+      "name": "Ahmad",
+      "phone": "0127764496"
+    },
+    {
+      "id": "3d23",
+      "name": "Saiful",
+      "phone": "0148872389"
+    },
+    {
+      "id": "25ea",
+      "name": "Ali",
+      "phone": "183846656656"
+    },
+    {
+      "id": "3",
+      "name": "Mat",
+      "phone": "1299997890"
+    }
+  ]
+}

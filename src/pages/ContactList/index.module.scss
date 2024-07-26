@@ -1,0 +1,126 @@
+.sctList {
+  padding: 20px;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  .header {
+    background-color: rgb(34, 173, 34);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 80px;
+
+    .title {
+      margin-left: 20px;
+      color: white;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+
+    .addButton {
+      height: 40px;
+      margin-right: 20px;
+      border-radius: 5px;
+      background-color: blue;
+      border: none;
+      padding: 0 10px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darkblue;
+      }
+    }
+  }
+
+  .table {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .nameList,
+  .numberList {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 2px solid #d0d0d0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .contactItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #d0d0d0;
+
+    input {
+      padding: 5px;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+    }
+
+    .buttonGroup {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .editButton {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        margin-left: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darkblue;
+        }
+      }
+
+      .deleteButton {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        margin-left: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darkred;
+        }
+      }
+    }
+  }
+
+  .contactName,
+  .contactNumber {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .contactNumber {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}
